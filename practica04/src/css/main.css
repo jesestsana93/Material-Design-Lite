@@ -1,0 +1,239 @@
+/* Begin your css styles */
+
+
+@font-face {
+    font-family: Coves;
+    src: url("../fonts/coves/Coves Light.otf");
+}
+@font-face {
+    font-family: CovesBold;
+    src: url("../fonts/coves/Coves Bold.otf");
+}
+
+.demo-layout-transparent {
+          background: url('../assets/images/city.gif') center / cover;
+        }
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+          /* This background is dark, so we set text to white. Use 87% black instead if
+             your background is light. */
+          color: white;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
+    color: #80DEEA;
+}
+.mdl-textfield__label:after {
+    background-color: #80DEEA;
+}
+
+main {
+    font-family: Coves;
+}
+h3, .titulo {
+    font-family: Coves;
+}
+.titulo {
+    padding: 60px 100px;
+    font-size: 6vw;
+    color: #fff;
+}
+.presentation {
+    color: aliceblue;
+    background: rgba(255,255,255,0.5);
+    width: 50%;
+    padding: 
+}
+.presentation p {
+    font-size: 3vw;
+    line-height: normal;
+}
+.mdl-textfield {
+    display: block;
+}
+.contenido-slider {
+    margin-top: 16vh;
+}
+.botton {
+    text-align: center;
+    margin: 100px 0;
+}
+.botton a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 40px; 
+    padding: 10px 40px;
+    background: #fff;
+    transition: all 0.1s ease-in-out;
+}
+.botton a:hover {
+    font-weight: 600;
+    background: #80DEEA;
+    transition: all 0.1s ease-in-out;
+}
+.div_title h2 {
+    text-align: center;
+    font-size: 4vw;
+}
+.div_formulario {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    text-align: center;
+    width: calc(30% - 9px);
+}
+.div_formulario .mdl-textfield {
+    margin: 0 auto;
+}
+
+#_principal .mi-header {
+    height: 700px;
+    position: relative;
+}
+#_principal .mdl-grid:not(.mi-badges) {
+    text-align: center;
+    padding: 0;
+}
+#_principal .contenido-slider p {
+    line-height: normal;
+    font-size: 2vw;
+        margin: 36px;
+}
+#_principal .contenido-slider h1 {
+    margin: 20px 36px;
+}
+#_principal .div_title {
+    margin: 0 20px;
+    background: rgba(255,255,255,0.8);
+    padding: 10px 0;
+}
+#_principal .mi-badges {
+    background: #F9F9FA;
+}
+.mi-badges .mdl-list__item {
+    font-family: Coves;
+}
+.mi-badges .mdl-list__item span.name-list {
+    font-size: 24px;
+}
+.mi-badges .mdl-list__item span {
+    font-size: 18px;
+    line-height: normal;
+}
+.mdl-grid .tutulo-cont {
+    text-align: center;
+}
+.contenido-grid .left {
+    border-right-style: dashed;
+    border-right-width: 2px;
+    border-right-color:#80DEEA;
+    text-align: left;
+    padding: 80px 35px;
+}
+.rigth img {
+    width: 40%;
+    margin: 70px;
+}
+.left h3 {
+    font-family: CovesBold;
+}
+#_principal > .contenido-grid:nth-child(2n-1) {
+    background: #F9F9FA;
+}
+.pre-footer {
+    background: #F9F9FA;
+}
+.seccion-icons {
+    margin: 40px 0;
+    font-family: Coves;
+}
+.seccion-icons > div {
+    text-align: center;
+}
+.seccion-icons .icono {
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #80DEEA;
+    font-family: Coves;
+}
+.seccion-icons i {
+    color: #80DEEA;
+    font-size: 4vw;
+    padding: 20px;
+}
+.seccion-icons p {
+    padding: 25px;
+    font-size: 1.3vw;
+}
+.seccion-icons .icon {
+    border: 2px solid #000;
+}
+.formulario {
+    width: 50%;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+.formulario h3 {
+    font-family: CovesBold;
+}
+.formulario > button {
+    font-family: Coves;
+    font-size: 22px;
+    margin: 40px 0;
+    border: 2px solid #80DEEA;
+    padding: 6px 22px;
+    height: 48px;
+    border-radius: 0px;
+}
+.formulario > button:hover {
+    background: #80DEEA;
+}
+footer {
+    font-family: Coves;
+}
+/* Small screens */
+@media screen and (max-width: 1024px) {
+    .contenido-grid .left {
+        border: none;
+    }
+    .seccion-icons i {
+        font-size: 7vw;
+    }
+    .seccion-icons p {
+        padding: 25px;
+        font-size: 2vw;
+        
+    }
+    .formulario {
+        width: 65%;
+    }
+    .contenido-slider {
+        margin-top: 26vh;
+    }
+    #_principal .contenido-slider p {
+        font-size: 4vh;
+    }
+}
+/* Versión tableta */
+@media screen and (max-width: 840px) {
+    #_principal .div_title {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .seccion-icons p {
+        line-height: 6vh;
+        padding: 25px 50px;
+        font-size: 3vw;
+        
+    }
+}
+/* Movil device */
+@media screen and (max-width: 480px){
+    .div_title {
+        width: 90%;
+    }
+    .div_title h2 {
+        font-size: 6vw;
+    }
+}
